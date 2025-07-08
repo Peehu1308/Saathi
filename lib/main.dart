@@ -10,7 +10,7 @@ void main() {
       useMaterial3: true,
       colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
       textTheme: TextTheme(
-        headlineSmall: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+        headlineSmall: TextStyle(fontSize: 27, fontWeight: FontWeight.bold),
         titleMedium: TextStyle(fontSize: 20),
         bodyMedium: TextStyle(fontSize: 18),
       ),
@@ -73,7 +73,7 @@ class HomeScreen extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => Image_to_Voice()),
+                        builder: (context) => ImageToVoice()),
                   );
                 },
               ),
