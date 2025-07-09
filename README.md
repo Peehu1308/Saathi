@@ -1,6 +1,6 @@
-# saathi
+# Saathi
 
-📱 Saathi – Your Smart Companion
+📱 # Saathi – Your Smart Companion
 Saathi is an AI-powered, accessible mobile application designed to assist users—especially the elderly and visually impaired—by combining voice and image recognition. Built with Flutter, Saathi aims to simplify interaction with technology through a clean, intuitive interface and intelligent features.
 
 ✨ Features
