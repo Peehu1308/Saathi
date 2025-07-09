@@ -66,8 +66,8 @@ class _OCRScreenState extends State<OCRScreen> {
           children: [
             ElevatedButton.icon(
               onPressed: _pickImage,
-              icon: Icon(Icons.image),
-              label: Text("Pick Image"),
+              icon: Icon(Icons.image,color: Colors.white,),
+              label: Text("Pick Image",style: TextStyle(color: Colors.white),),
             ),
             SizedBox(height: 20),
             _image != null ? Image.file(_image!, height: 200) : Container(),
