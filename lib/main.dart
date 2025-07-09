@@ -3,6 +3,7 @@ import 'package:saathi/favorite_items.dart';
 import 'package:saathi/favorites_screen.dart';
 import 'package:saathi/home.dart';
 import 'package:saathi/image_tovoice.dart';
+import 'package:saathi/setting.dart';
 import 'package:saathi/splash.dart';
 import 'package:saathi/voiceinput.dart';
 
@@ -31,7 +32,7 @@ class SaathiApp extends StatelessWidget {
         '/imageToVoice': (context) => ImageToVoice(),
         '/voice': (context) => VoiceInputScreen(),
         '/favorites': (context) => FavoritesScreen(favorites: favoriteList),
-        // '/settings': (context) => SettingsScreen(), // Optional future screen
+        '/settings': (context) => SettingsScreen(), 
       },
     );
   }
