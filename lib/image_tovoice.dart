@@ -58,7 +58,7 @@ class _ImageToVoiceState extends State<ImageToVoice> {
     }
   }
 
-  Future<void> speak(String text, {String languageCode = 'en-GB'}) async {
+  Future<void> speak(String text, {String languageCode = 'en-UK'}) async {
     if (text.isNotEmpty) {
       await flutterTts.setLanguage(languageCode);
       await flutterTts.setPitch(1.0);
@@ -88,8 +88,8 @@ class _ImageToVoiceState extends State<ImageToVoice> {
           children: [
             ElevatedButton.icon(
               onPressed: pickImage,
-              icon: Icon(Icons.image, size: 28),
-              label: Text("Pick Image", style: TextStyle(fontSize: 20)),
+              icon: Icon(Icons.image, size: 28,color: Colors.white,),
+              label: Text("Pick Image", style: TextStyle(fontSize: 20,color: Colors.white)),
               style: ElevatedButton.styleFrom(
                 padding: EdgeInsets.symmetric(vertical: 16),
                 backgroundColor: Colors.teal[600],
@@ -107,15 +107,15 @@ class _ImageToVoiceState extends State<ImageToVoice> {
             SizedBox(height: 20),
             ElevatedButton.icon(
               onPressed: () => speak(extractedText),
-              icon: Icon(Icons.volume_up, size: 28),
-              label: Text("Read Extracted Text", style: TextStyle(fontSize: 20)),
+              icon: Icon(Icons.volume_up, size: 28,color: Colors.teal),
+              label: Text("Read Extracted Text", style: TextStyle(fontSize: 20,color: Colors.teal)),
               style: ElevatedButton.styleFrom(padding: EdgeInsets.symmetric(vertical: 16)),
             ),
             SizedBox(height: 12),
             ElevatedButton.icon(
               onPressed: () => translateText(extractedText),
-              icon: Icon(Icons.translate, size: 28),
-              label: Text("Translate and Read", style: TextStyle(fontSize: 20)),
+              icon: Icon(Icons.translate, size: 28,color: Colors.teal),
+              label: Text("Translate and Read", style: TextStyle(fontSize: 20,color: Colors.teal)),
               style: ElevatedButton.styleFrom(padding: EdgeInsets.symmetric(vertical: 16)),
             ),
             SizedBox(height: 24),
